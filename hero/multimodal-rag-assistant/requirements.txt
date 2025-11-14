@@ -1,0 +1,9 @@
+streamlit
+pillow
+transformers
+torch
+sentence-transformers
+faiss-cpu
+pdfplumber
+openai
+requests
