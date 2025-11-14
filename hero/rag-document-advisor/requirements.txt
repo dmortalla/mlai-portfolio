@@ -1,0 +1,10 @@
+streamlit
+faiss-cpu
+sentence-transformers
+numpy
+pandas
+openai
+requests
+pdfplumber
+PyPDF2
+python-dotenv
