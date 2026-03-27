@@ -60,7 +60,7 @@ personal-ai-assistant/
 
 ## ⚙️ Architecture
 
-The system is designed as a modular AI application with clearly separated components:
+This architecture demonstrates a modular AI system design with clear separation between the UI, orchestration, and AI service layers.
 
 ```mermaid
 flowchart LR
