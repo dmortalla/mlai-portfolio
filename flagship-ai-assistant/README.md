@@ -64,20 +64,43 @@ The system is designed as a modular AI application with clearly separated compon
 
 ```mermaid
 flowchart LR
-    UI["User Input - Streamlit UI"] --> Router["Router - router.py"]
 
-    Router --> Memory["Memory - memory.py"]
-    Router --> Tools["Tools - tools.py"]
-    Router --> Retrieval["Retrieval - rag.py"]
-    Router --> LLM["LLM Layer - llm.py"]
+    subgraph UI["UI Layer"]
+        UI1["User Input - Streamlit UI"]
+    end
 
-    Memory --> M1["Stores user preferences"]
-    Tools --> T1["Safe calculator execution"]
-    Retrieval --> R1["TF-IDF indexing"]
-    Retrieval --> R2["Top-k retrieval"]
-    LLM --> L1["OpenAI API / Fallback"]
+    subgraph ORCH["Orchestration Layer"]
+        OR1["Router - router.py"]
+    end
 
-    LLM --> Response["Response to UI"]
+    subgraph AI["AI Services Layer"]
+        M1["Memory - memory.py"]
+        M2["Stores user preferences"]
+        T1["Tools - tools.py"]
+        T2["Safe calculator execution"]
+        R1["Retrieval - rag.py"]
+        R2["TF-IDF indexing"]
+        R3["Top-k retrieval"]
+        L1["LLM Layer - llm.py"]
+        L2["OpenAI API / Fallback"]
+        OUT["Response to UI"]
+    end
+
+    UI1 --> OR1
+
+    OR1 --> M1
+    M1 --> M2
+
+    OR1 --> T1
+    T1 --> T2
+
+    OR1 --> R1
+    R1 --> R2
+    R1 --> R3
+
+    OR1 --> L1
+    L1 --> L2
+    L1 --> OUT
 ```
 
 ---
