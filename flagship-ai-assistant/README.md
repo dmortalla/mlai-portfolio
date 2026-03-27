@@ -1,13 +1,18 @@
 # Personal AI Assistant – RAG + Memory + Tools (Streamlit)
 
-This project is designed as a **flagship Machine Learning & AI Engineering
-portfolio app**. It combines:
+Overview
 
-- A chat-based interface (Streamlit).
-- Lightweight Retrieval-Augmented Generation (RAG) over uploaded documents.
-- A simple long-term memory store.
-- Tool calling (safe calculator) with logs.
-- Pluggable LLM backend (OpenAI) with a graceful no-API fallback.
+Personal AI Assistant is a modular AI application that combines document-aware question answering, lightweight long-term memory, and safe tool usage within a single Streamlit interface.
+
+This project is designed to demonstrate practical AI engineering patterns, including retrieval orchestration, LLM abstraction, modular system design, and failure-safe behavior when external APIs are unavailable.
+
+It integrates the following core components:
+
+A chat-based interface built with Streamlit
+Lightweight Retrieval-Augmented Generation (RAG) over uploaded documents
+A simple long-term memory store for user preferences
+Tool calling with a safe calculator and logging
+A pluggable LLM backend (OpenAI) with a graceful no-API fallback
 
 ---
 
