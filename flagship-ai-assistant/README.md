@@ -16,6 +16,19 @@ It integrates the following core components:
 
 ---
 
+## 📸 Demo
+
+### Chat Interface
+![Chat UI](assets/chat_ui.png)
+
+### Document Upload & RAG
+![RAG](assets/rag_demo.png)
+
+### Tool Execution
+![Tools](assets/tools.png)
+
+---
+
 ## 🚀 Features
 
 - **Chat UI** with multiple personas:
@@ -34,6 +47,24 @@ It integrates the following core components:
 
 The architecture is intentionally simple and transparent, so recruiters
 can understand and extend it easily.
+
+---
+
+## 🌍 Real-World Use Cases
+
+This system can be adapted for:
+
+- Customer support assistants with document-based Q&A  
+- Internal knowledge base search tools  
+- Technical documentation assistants  
+- Business intelligence copilots  
+- Educational AI tutors with contextual understanding  
+
+---
+
+## 🛠 Tech Stack
+
+Python, Streamlit, OpenAI API, TF-IDF (scikit-learn), JSON storage
 
 ---
 
