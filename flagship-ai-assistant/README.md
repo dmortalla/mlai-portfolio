@@ -1,5 +1,4 @@
 # Personal AI Assistant – RAG + Memory + Tools (Streamlit)
----
 
 ## Overview
 
