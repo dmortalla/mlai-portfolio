@@ -1,5 +1,7 @@
 # Personal AI Assistant – RAG + Memory + Tools (Streamlit)
 
+---
+
 ## Overview
 
 Personal AI Assistant is a modular AI application that combines document-aware question answering, lightweight long-term memory, and safe tool usage within a single Streamlit interface.
