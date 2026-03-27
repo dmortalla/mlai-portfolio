@@ -58,6 +58,55 @@ personal-ai-assistant/
 
 ---
 
+## ⚙️ Architecture
+
+The system is designed as a modular AI application with clearly separated components:
+
+    User Input (Streamlit UI)
+            │
+            ▼
+       Router (router.py)
+            │
+            ├──► Memory (memory.py)
+            │       - Stores user preferences
+            │
+            ├──► Tools (tools.py)
+            │       - Safe calculator execution
+            │
+            ├──► Retrieval (rag.py)
+            │       - TF-IDF indexing
+            │       - Top-k document retrieval
+            │
+            ▼
+       LLM Layer (llm.py)
+            - OpenAI API (if key available)
+            - Fallback response (no API key)
+            │
+            ▼
+       Response to UI
+
+### Component Responsibilities
+
+- **Streamlit UI (`app.py`)**  
+  Handles user interaction, persona selection, and document uploads  
+
+- **Router (`router.py`)**  
+  Orchestrates request flow between memory, retrieval, tools, and LLM  
+
+- **Retrieval (`rag.py`)**  
+  Performs TF-IDF indexing and retrieves relevant document chunks  
+
+- **Memory (`memory.py`)**  
+  Stores and retrieves simple long-term user preferences  
+
+- **Tools (`tools.py`)**  
+  Executes safe utility functions and logs tool usage  
+
+- **LLM Layer (`llm.py`)**  
+  Handles LLM interaction with a fallback mode when no API key is provided  
+
+---
+
 ## 🔑 Setup
 
 1. (Optional but recommended) create a virtual environment.
