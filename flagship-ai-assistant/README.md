@@ -185,7 +185,7 @@ flowchart LR
 
 ## 🔑 Setup
 
-1. (Optional but recommended) create a virtual environment.
+1. Create a virtual environment (recommended).
 
 2. Install dependencies:
 
@@ -193,7 +193,7 @@ flowchart LR
 pip install -r requirements.txt
 ```
 
-3. Set your OpenAI API key (if you want real LLM responses):
+3. Set your OpenAI API key (required for live LLM responses):
 
 ```bash
 export OPENAI_API_KEY="sk-..."
@@ -205,14 +205,14 @@ On Windows PowerShell:
 $env:OPENAI_API_KEY="sk-..."
 ```
 
-> If `OPENAI_API_KEY` is not set, the assistant will **not** call an LLM and
-> will instead respond with a safe echo-style fallback.
+> If OPENAI_API_KEY is not set, the system falls back
+> to a safe local response mode (no external API calls).
 
 ---
 
 ## ▶️ Run the App
 
-From the project folder:
+From the project root directory:
 
 ```bash
 streamlit run app.py
@@ -224,15 +224,15 @@ Then open the URL shown in the terminal (typically http://localhost:8501).
 
 ## 🧪 How to Use
 
-1. Go to the sidebar and choose a persona.
-2. Upload one or more documents (`.txt`, `.md`, `.pdf`).
-3. Ask questions in the **Chat** tab, such as:
+1. Select an assistant persona from the sidebar.
+2. Upload one or more documents (`.txt`, `.md`, `.pdf`) for retrieval.
+3. Ask questions in the Chat tab, such as:
    - "Summarize the key points from my documents."
-   - "Based on my docs, what are the main risks?"
+   - "What does the uploaded document say about TF-IDF?"
    - "Explain the main idea like I'm 12."
-4. Check:
-   - **Memory** tab to see stored preferences.
-   - **Tools** tab to view tool call logs.
+4. Explore system features:
+   - **Memory tab** → View stored user preferences  
+   - **Tools tab** → Inspect tool execution logs  
 
 ---
 
