@@ -236,12 +236,11 @@ Then open the URL shown in the terminal (typically http://localhost:8501).
 
 ---
 
-## 🧱 Extensibility Notes (for Recruiters / Engineers)
+## 🚀 Future Improvements & Scalability
 
-- Swap TF-IDF + cosine similarity for deep embeddings (OpenAI, sentence-transformers, etc.).
-- Replace local JSON memory with a database (SQLite, Postgres, Redis, etc.).
-- Add new tools (e.g., web search, database queries, third-party APIs).
-- Wrap the Streamlit app in Docker and deploy to cloud / Hostinger.
+- Replace TF-IDF with embedding-based retrieval (OpenAI embeddings, sentence-transformers, FAISS)
+- Upgrade memory layer from JSON to a persistent database (SQLite, Postgres, Redis)
+- Extend tool ecosystem (web search, database queries, external APIs)
+- Containerize the application with Docker for cloud deployment
 
-The codebase is kept small and well-documented to show clear reasoning
-and solid engineering practices without unnecessary complexity.
+This project is intentionally designed with a modular architecture to support seamless scaling and component replacement.
