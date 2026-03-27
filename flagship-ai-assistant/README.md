@@ -105,7 +105,6 @@ flowchart TD
     F --> F2[Fallback response (no API key)]
 
     F --> G[Response to UI]
-```
 
 ### Component Responsibilities
 
