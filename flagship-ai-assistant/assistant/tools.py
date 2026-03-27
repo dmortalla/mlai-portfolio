@@ -20,6 +20,7 @@ class SafeEvalVisitor(ast.NodeVisitor):
         ast.BinOp,
         ast.UnaryOp,
         ast.Num,
+        ast.Constant,
         ast.Load,
         ast.Add,
         ast.Sub,

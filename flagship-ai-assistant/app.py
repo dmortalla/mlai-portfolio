@@ -139,6 +139,7 @@ def main() -> None:
     _ensure_dirs()
     st.set_page_config(page_title="Personal AI Assistant", layout="wide")
     init_session_state()
+    render_sidebar()
 
     tab_chat, tab_memory, tab_tools = st.tabs(["Chat", "Memory", "Tools"])
 

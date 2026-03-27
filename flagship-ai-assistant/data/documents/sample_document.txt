@@ -1,0 +1,5 @@
+This AI assistant uses retrieval-augmented generation (RAG) to answer questions based on uploaded documents.
+
+It applies TF-IDF vectorization to identify relevant text segments and provide context-aware responses.
+
+The system also includes a modular architecture with memory, tool usage, and document retrieval components.
