@@ -1,5 +1,10 @@
 # Personal AI Assistant – RAG + Memory + Tools (Streamlit)
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 ## 📸 Demo
 
 ### 💬 Chat Interface
