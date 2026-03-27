@@ -70,9 +70,26 @@ This system can be adapted for:
 
 ---
 
-## 🛠 Tech Stack
+## 🧰 Tech Stack
 
-Python, Streamlit, OpenAI API, TF-IDF (scikit-learn), JSON storage
+**Core Technologies**
+- Python
+- Streamlit
+
+**AI / Machine Learning**
+- OpenAI API (LLM integration)
+- TF-IDF Vectorization (scikit-learn)
+
+**System Design**
+- Modular architecture (UI, routing, services)
+- Retrieval-Augmented Generation (RAG)
+
+**Data & Storage**
+- JSON-based memory store
+- Local document indexing
+
+**Tools & Safety**
+- AST-based safe expression evaluation
 
 ---
 
