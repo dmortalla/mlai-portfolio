@@ -85,6 +85,28 @@ The system is designed as a modular AI application with clearly separated compon
             ▼
        Response to UI
 
+
+```mermaid
+flowchart TD
+    A[User Input (Streamlit UI)] --> B[Router (router.py)]
+
+    B --> C[Memory (memory.py)]
+    C --> C1[Stores user preferences]
+
+    B --> D[Tools (tools.py)]
+    D --> D1[Safe calculator execution]
+
+    B --> E[Retrieval (rag.py)]
+    E --> E1[TF-IDF indexing]
+    E --> E2[Top-k document retrieval]
+
+    B --> F[LLM Layer (llm.py)]
+    F --> F1[OpenAI API (if key available)]
+    F --> F2[Fallback response (no API key)]
+
+    F --> G[Response to UI]
+```
+
 ### Component Responsibilities
 
 - **Streamlit UI (`app.py`)**  
