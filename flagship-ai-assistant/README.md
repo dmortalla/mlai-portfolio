@@ -62,31 +62,6 @@ personal-ai-assistant/
 
 The system is designed as a modular AI application with clearly separated components:
 
-    User Input (Streamlit UI)
-            │
-            ▼
-       Router (router.py)
-            │
-            ├──► Memory (memory.py)
-            │       - Stores user preferences
-            │
-            ├──► Tools (tools.py)
-            │       - Safe calculator execution
-            │
-            ├──► Retrieval (rag.py)
-            │       - TF-IDF indexing
-            │       - Top-k document retrieval
-            │
-            ▼
-       LLM Layer (llm.py)
-            - OpenAI API (if key available)
-            - Fallback response (no API key)
-            │
-            ▼
-       Response to UI
-
----
-
 ```mermaid
 flowchart LR
     UI["User Input - Streamlit UI"] --> Router["Router - router.py"]
